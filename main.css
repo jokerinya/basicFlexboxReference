@@ -28,8 +28,7 @@ body {
   /* flex-flow: row wrap;  yukarıdakinin kısa versiyonu*/
   align-items: center;
   /* align cross axis ile hareket eder justify main axis */
-  justify-content: center;
-  align-content: center;
+  justify-content: flex-start;
 }
 
 .item-1 {
@@ -76,6 +75,15 @@ body {
   border: 5px solid black;
   margin: 10px;
   width: 350px;
+  /* normalde width belirlenmiş olsa default olarak
+  flex-items içindeki content kadar daralırlar. */
+  /*   flex-grow: 0;
+genişleme oranını ayarlar
+  flex-shrink: 1;
+  daralma oranını ayarlar
+  flex-basis: auto; */
+  /* yukarıdakinin shorthand versiyonu */
+  flex: 0 1 auto;
 }
 
 .item-6 {
